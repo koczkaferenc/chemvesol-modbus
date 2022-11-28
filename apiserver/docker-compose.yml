@@ -1,0 +1,8 @@
+version: "3.0"
+services:
+  restserver:
+    container_name: restserver
+    build: node
+    ports:
+      - 5000:5000
+    command: npm start
