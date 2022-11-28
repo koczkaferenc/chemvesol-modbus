@@ -10,7 +10,7 @@ payload = json.dumps({
   "measures": [
     {
       "id": "1",
-      "value": "3.16"
+      "value": "3.17"
     },
     {
       "id": "2",
