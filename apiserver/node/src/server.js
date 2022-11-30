@@ -33,6 +33,7 @@ app.post('/storedata', (req, res) => {
   const stationIdenfifier = req.body['stationIdenfifier'];
   const date = req.body['date'];
   const measures = req.body['measures'];
+ 
   /**
   // Processing data
   answer = stationIdentifier + ' sent: ';

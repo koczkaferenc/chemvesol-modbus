@@ -1,0 +1,24 @@
+L: 2022/11/30 15:11:11: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:11:11", "measures": [{"id": 40000, "value": 62.23}, {"id": 40001, "value": 56.35}, {"id": 40002, "value": 52.65}]}
+L: 2022/11/30 15:11:11: ERR: API Server Connection error. Url: http://193.225.33.218:5000/. UnSent data: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:11:11", "measures": [{"id": 40000, "value": 62.23}, {"id": 40001, "value": 56.35}, {"id": 40002, "value": 52.65}]}.
+L: 2022/11/30 15:14:25: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:14:25", "measures": [{"id": 40000, "value": 46.77}, {"id": 40001, "value": 66.61}, {"id": 40002, "value": 45.44}]}
+L: 2022/11/30 15:14:25: ERR: API Server Connection error. Url: http://193.225.33.218:5000/. UnSent data: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:14:25", "measures": [{"id": 40000, "value": 46.77}, {"id": 40001, "value": 66.61}, {"id": 40002, "value": 45.44}]}.
+L: 2022/11/30 15:15:34: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:15:34", "measures": [{"id": 40000, "value": 48.1}, {"id": 40001, "value": 35.65}, {"id": 40002, "value": 45.31}]}
+L: 2022/11/30 15:15:34: ERR: API Server Connection error. Url: http://193.225.33.218:5000/. UnSent data: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:15:34", "measures": [{"id": 40000, "value": 48.1}, {"id": 40001, "value": 35.65}, {"id": 40002, "value": 45.31}]}.
+L: 2022/11/30 15:16:16: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:16:16", "measures": [{"id": 40000, "value": 62.73}, {"id": 40001, "value": 33.33}, {"id": 40002, "value": 61.72}]}
+L: 2022/11/30 15:16:16: ERR: API Server Connection error. Url: http://193.225.33.218:5000/. UnSent data: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:16:16", "measures": [{"id": 40000, "value": 62.73}, {"id": 40001, "value": 33.33}, {"id": 40002, "value": 61.72}]}.
+L: 2022/11/30 15:16:28: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:16:28", "measures": [{"id": 40000, "value": 55.03}, {"id": 40001, "value": 61.43}, {"id": 40002, "value": 43.83}]}
+L: 2022/11/30 15:16:28: OK: Response: OK
+L: 2022/11/30 15:21:56: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:21:56", "measures": [{"id": 40000, "value": 38.47}, {"id": 40001, "value": 58.7}, {"id": 40002, "value": 39.37}]}
+L: 2022/11/30 15:21:56: OK: Response: OK
+L: 2022/11/30 15:22:48: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:22:48", "measures": [{"id": 40000, "value": 60.21}, {"id": 40001, "value": 57.92}, {"id": 40002, "value": 47.92}]}
+L: 2022/11/30 15:22:48: OK: Response: OK
+L: 2022/11/30 15:22:48: 12ff250806c14f51a9afe288c4734304.json
+L: 2022/11/30 15:22:48: dd4427ac85634e0b8bd73e9803aaabe9.json
+L: 2022/11/30 15:25:34: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:25:34", "measures": [{"id": 40000, "value": 59.42}, {"id": 40001, "value": 49.42}, {"id": 40002, "value": 66.04}]}
+L: 2022/11/30 15:25:34: OK: Response: OK
+L: 2022/11/30 15:26:29: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:26:29", "measures": [{"id": 40000, "value": 46.13}, {"id": 40001, "value": 58.81}, {"id": 40002, "value": 59.78}]}
+L: 2022/11/30 15:26:29: OK: Response: OK
+L: 2022/11/30 15:26:30: INFO: UnSent file(s) in the Spool Directory: 2
+L: 2022/11/30 15:26:42: INFO: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:26:42", "measures": [{"id": 40000, "value": 62.04}, {"id": 40001, "value": 46.29}, {"id": 40002, "value": 54.33}]}
+L: 2022/11/30 15:26:42: OK: Response: OK
+L: 2022/11/30 15:26:42: INFO: UnSent file(s) in the Spool Directory: 2
