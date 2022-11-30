@@ -12,7 +12,6 @@ from pyModbusTCP.client import ModbusClient
 ##################################################################################
 # If EMULATED, only random numbers will be sent
 EMULATED = True
-DEBUG=True
 LOGFILE="/var/log/readModBus.log"
 
 # System parameters
@@ -40,6 +39,8 @@ MODBUSIDS = [40000, 40001, 40002]
 HEADERS = {'Content-Type': 'application/json'}
 # ModBus Spool Directory, do not change
 MODBUSPOOLDIR='/var/modBusSpool'
+# Maximal number of failures of sending files from the spoolDir
+MAXFAILS = 3
 
 ##################################################################################
 # Storing Log messages
@@ -98,8 +99,27 @@ def mkJsonStructure(modBusData):
     jsonArr["measures"] = modBusData
     return json.dumps(jsonArr)
 
+##################################################################################
+# Resend a json file to the API server
+##################################################################################
+def sendToAPIServer(jsonFile):
+    logLine("INFO: resending file: %s" % jsonFile)
+    spoolFile = open(jsonFile, 'r')
+    dataToSend = spoolFile.read()
+    spoolFile.close()
+    try:
+        response = requests.request("POST", URL + "storedata/", headers=HEADERS, data=dataToSend, timeout=TIMEOUT)
+    except:
+        logLine("ERR: ReSend Failed. Url: %s. UnSent data: %s." % (URL, dataToSend))
+        numOfFailedSpoolFiles += 1
+    else:
+        logLine("OK: ReSent: %s, Response: %s" % (dataToSend, response.text))    
+        os.remove(jsonFile)
+
+
+
+numOfFailedSpoolFiles = 0
 dataToSend = mkJsonStructure(emulateReadModBusData()) if EMULATED else mkJsonStructure(readModBusData())
-logLine("INFO: " + dataToSend)
 try:
     response = requests.request("POST", URL + "storedata/", headers=HEADERS, data=dataToSend, timeout=TIMEOUT)
 except:
@@ -112,10 +132,9 @@ except:
     spoolFile.close()
 
 else:
-    logLine("OK: Response: " + response.text)
+    logLine("OK: Sent: %s, Response: %s" % (dataToSend, response.text))
     numOfUnSentJsonFiles = 0
     for jsonFile in os.listdir(MODBUSPOOLDIR):
         if jsonFile.endswith(".json"):
-            numOfUnSentJsonFiles += 1
-    if numOfUnSentJsonFiles > 0:
-        logLine("INFO: UnSent file(s) in the Spool Directory: %d" % numOfUnSentJsonFiles)
+            if numOfFailedSpoolFiles < MAXFAILS:
+               sendToAPIServer(MODBUSPOOLDIR + "/" + jsonFile)
