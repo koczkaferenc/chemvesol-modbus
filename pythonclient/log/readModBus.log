@@ -26,3 +26,6 @@ L: 2022/11/30 15:49:38: OK: ReSent: {"stationIdenfifier": "bRsT64wW23", "date": 
 L: 2022/11/30 15:49:38: INFO: resending file: /var/modBusSpool/e33ba671df2145fe812623fa8f1631b9.json
 L: 2022/11/30 15:49:38: OK: ReSent: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:49:00", "measures": [{"id": 40000, "value": 60.61}, {"id": 40001, "value": 35.3}, {"id": 40002, "value": 56.4}]}, Response: OK
 L: 2022/11/30 15:49:52: ERR: API Server Connection error. Url: http://193.225.33.218:5000/. UnSent data: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:49:52", "measures": [{"id": 40000, "value": 66.29}, {"id": 40001, "value": 58.33}, {"id": 40002, "value": 52.66}]}.
+L: 2022/11/30 15:51:44: OK: Sent: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:51:44", "measures": [{"id": 40000, "value": 34.26}, {"id": 40001, "value": 43.75}, {"id": 40002, "value": 63.39}]}, Response: OK
+L: 2022/11/30 15:51:44: INFO: resending file: /var/modBusSpool/23e71d4e2bd44103a5d830e61ba1efa6.json
+L: 2022/11/30 15:51:44: OK: ReSent: {"stationIdenfifier": "bRsT64wW23", "date": "2022/11/30 15:49:52", "measures": [{"id": 40000, "value": 66.29}, {"id": 40001, "value": 58.33}, {"id": 40002, "value": 52.66}]}, Response: OK

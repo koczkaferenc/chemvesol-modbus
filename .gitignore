@@ -1,1 +1,3 @@
 server/node/src/node-modules/
+pythonclient/log/*
+pythonclient/spool/*
