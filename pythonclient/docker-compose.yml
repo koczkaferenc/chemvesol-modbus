@@ -13,5 +13,5 @@ services:
         target: /var/modBusSpool
 
 volumes:
-  src:
+  log:
   spool:
